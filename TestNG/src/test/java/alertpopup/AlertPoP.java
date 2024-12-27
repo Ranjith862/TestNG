@@ -15,7 +15,7 @@ public class AlertPoP {
 	public void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://the-internet.herokuapp.com/");
+		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		driver.manage().window().maximize();
 	}
 
