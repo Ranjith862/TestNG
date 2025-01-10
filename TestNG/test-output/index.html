@@ -156,6 +156,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testNGListeners.ListenerExamplesTestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;5&quot;&gt;
     &lt;parameter name=&quot;uname&quot; value=&quot;student&quot;/&gt;
     &lt;parameter name=&quot;pword&quot; value=&quot;Password123&quot;/&gt;
@@ -204,16 +207,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginDemoApp')
 data.setCell(0, 2, 'parameters.ParameterizedTest')
-data.setCell(0, 3, 1260);
+data.setCell(0, 3, 1617);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'logout')
 data.setCell(1, 2, 'parameters.ParameterizedTest')
-data.setCell(1, 3, 299);
+data.setCell(1, 3, 613);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -246,15 +249,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginDemoApp(student, Password123)</span>
-                <span class="method-start">4118 ms</span>
+                <span class="method-start">4982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">5399 ms</span>
+                <span class="method-start">6621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeChrome</span>
-                <span class="method-start">5704 ms</span>
+                <span class="method-start">7241 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

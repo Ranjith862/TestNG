@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-10T09:41:50 IST" name="Suite" finished-at="2025-01-10T09:41:56 IST" duration-ms="6056">
+  <suite started-at="2025-01-10T12:46:54 IST" name="Suite" finished-at="2025-01-10T12:47:02 IST" duration-ms="7714">
     <groups>
     </groups>
-    <test started-at="2025-01-10T09:41:50 IST" name="Test" finished-at="2025-01-10T09:41:56 IST" duration-ms="6056">
+    <test started-at="2025-01-10T12:46:54 IST" name="Test" finished-at="2025-01-10T12:47:02 IST" duration-ms="7714">
       <class name="parameters.ParameterizedTest">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:50 IST" name="openChrome" finished-at="2025-01-10T09:41:54 IST" duration-ms="4059" status="PASS">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:parameters.ParameterizedTest@5b218417]" started-at="2025-01-10T12:46:54 IST" name="openChrome" finished-at="2025-01-10T12:46:59 IST" duration-ms="4879" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="loginDemoApp(java.lang.String,java.lang.String)[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:54 IST" name="loginDemoApp" finished-at="2025-01-10T09:41:55 IST" duration-ms="1260" status="PASS">
+        <test-method signature="loginDemoApp(java.lang.String,java.lang.String)[pri:0, instance:parameters.ParameterizedTest@5b218417]" started-at="2025-01-10T12:46:59 IST" name="loginDemoApp" finished-at="2025-01-10T12:47:00 IST" duration-ms="1617" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDemoApp -->
-        <test-method signature="logout()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:55 IST" name="logout" finished-at="2025-01-10T09:41:56 IST" depends-on-methods="parameters.ParameterizedTest.loginDemoApp" duration-ms="299" status="PASS">
+        <test-method signature="logout()[pri:0, instance:parameters.ParameterizedTest@5b218417]" started-at="2025-01-10T12:47:00 IST" name="logout" finished-at="2025-01-10T12:47:01 IST" depends-on-methods="parameters.ParameterizedTest.loginDemoApp" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeChrome()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:56 IST" name="closeChrome" finished-at="2025-01-10T09:41:56 IST" duration-ms="338" status="PASS">
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:parameters.ParameterizedTest@5b218417]" started-at="2025-01-10T12:47:01 IST" name="closeChrome" finished-at="2025-01-10T12:47:02 IST" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChrome -->
