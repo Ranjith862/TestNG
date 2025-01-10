@@ -1,85 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-25T18:34:05 IST" name="Default suite" finished-at="2024-12-25T18:34:20 IST" duration-ms="15409">
+  <suite started-at="2025-01-10T09:41:50 IST" name="Suite" finished-at="2025-01-10T09:41:56 IST" duration-ms="6056">
     <groups>
     </groups>
-    <test started-at="2024-12-25T18:34:05 IST" name="Default test" finished-at="2024-12-25T18:34:20 IST" duration-ms="15409">
-      <class name="dataDriverFramework.ReadDatasFromExcel">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:05 IST" name="openChrome" finished-at="2024-12-25T18:34:12 IST" duration-ms="7063" status="PASS">
+    <test started-at="2025-01-10T09:41:50 IST" name="Test" finished-at="2025-01-10T09:41:56 IST" duration-ms="6056">
+      <class name="parameters.ParameterizedTest">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:50 IST" name="openChrome" finished-at="2025-01-10T09:41:54 IST" duration-ms="4059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="loginFuntion(java.lang.String,java.lang.String)[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:13 IST" name="loginFuntion" data-provider="loginData" finished-at="2024-12-25T18:34:13 IST" duration-ms="405" status="PASS">
+        <test-method signature="loginDemoApp(java.lang.String,java.lang.String)[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:54 IST" name="loginDemoApp" finished-at="2025-01-10T09:41:55 IST" duration-ms="1260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[student]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[wrong]]>
+                <![CDATA[Password123]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFuntion -->
-        <test-method signature="loginFuntion(java.lang.String,java.lang.String)[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:13 IST" name="loginFuntion" data-provider="loginData" finished-at="2024-12-25T18:34:15 IST" duration-ms="2089" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginDemoApp -->
+        <test-method signature="logout()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:55 IST" name="logout" finished-at="2025-01-10T09:41:56 IST" depends-on-methods="parameters.ParameterizedTest.loginDemoApp" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFuntion -->
-        <test-method signature="loginFuntion(java.lang.String,java.lang.String)[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:15 IST" name="loginFuntion" data-provider="loginData" finished-at="2024-12-25T18:34:18 IST" duration-ms="2326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[wrong]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[wrong]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFuntion -->
-        <test-method signature="loginFuntion(java.lang.String,java.lang.String)[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:18 IST" name="loginFuntion" data-provider="loginData" finished-at="2024-12-25T18:34:20 IST" duration-ms="2011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFuntion -->
-        <test-method is-config="true" signature="closeChrome()[pri:0, instance:dataDriverFramework.ReadDatasFromExcel@cecf639]" started-at="2024-12-25T18:34:20 IST" name="closeChrome" finished-at="2024-12-25T18:34:20 IST" duration-ms="276" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeChrome()[pri:0, instance:parameters.ParameterizedTest@cc43f62]" started-at="2025-01-10T09:41:56 IST" name="closeChrome" finished-at="2025-01-10T09:41:56 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeChrome -->
-      </class> <!-- dataDriverFramework.ReadDatasFromExcel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- parameters.ParameterizedTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

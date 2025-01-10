@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDriverFramework.ReadDatasFromExcel">
+      <class name="parameters.ParameterizedTest">
         <methods>
-          <include name="closeChrome"/>
           <include name="openChrome"/>
-          <include name="loginFuntion"/>
+          <include name="logout"/>
+          <include name="closeChrome"/>
+          <include name="loginDemoApp"/>
         </methods>
-      </class> <!-- dataDriverFramework.ReadDatasFromExcel -->
+      </class> <!-- parameters.ParameterizedTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" verbose="5">
 	<test thread-count="5" name="Test">
+	<parameter name="uname" value="student"></parameter>
+	<parameter name="pword" value="Password123"></parameter>
 		<classes>
-			<class name="mouseHoverActions.DoubleClick" />
-			<class name="mouseHoverActions.Move" />
-			<class name="mouseHoverActions.RightClick" />
+			<class name="parameters.ParameterizedTest" />
 		</classes>
 	</test> <!--
 	Test -->
