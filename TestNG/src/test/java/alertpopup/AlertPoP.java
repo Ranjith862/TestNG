@@ -1,7 +1,5 @@
 package alertpopup;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +15,6 @@ public class AlertPoP {
 	public void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		driver.manage().window().maximize();
 	}
@@ -39,7 +36,7 @@ public class AlertPoP {
 	@Test()
 	public void clickForJSPromt() throws InterruptedException {
 		WebElement alert3 = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
-		alert3.click(); 
+		alert3.click();
 		driver.switchTo().alert().sendKeys("Input Fields");
 		driver.switchTo().alert().accept();
 	}
