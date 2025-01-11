@@ -12,7 +12,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-public class VerifyGoogleAndBing {
+public class VerifyGoogleAndWikipedia {
 	WebDriver driver;
 	ExtentReports extentreport;
 	ExtentSparkReporter sparkreport;
